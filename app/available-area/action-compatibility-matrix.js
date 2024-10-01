@@ -5,11 +5,12 @@ const ACTION_COMPATIBILITY_MATRIX = {
   za: ['zb'],
   zb: ['za'],
   SAM1: ['SAM3', 'SAM2', 'AB3'],
-  SAM2: ['SAM1', 'SAM3'],
-  SAM3: ['SAM1', 'SAM2'],
+  SAM2: ['SAM1', 'SAM3', 'CSAM1'],
+  SAM3: ['SAM1', 'SAM2', 'CSAM1'],
   LIG1: [],
   AB3: ['SAM1'],
-  GRH1: ['SAM1']
+  GRH1: ['SAM1'],
+  CSAM1: ['SAM2', 'SAM3']
 }
 
 function applyUpdate (newEntries, actionCompatibilityMatrix) {
